@@ -1,10 +1,9 @@
-
 // Scrolling
 
 $('.navbar .nav-link').click(function () {
-    let sectionHrefClicked = $(this).attr('data-my-href');
-    $("html , body").animate({ scrollTop: $(sectionHrefClicked).offset().top }, 500)
-
+    var sectionHrefClicked = $(this).attr('data-my-href');
+    var topPosition = $(sectionHrefClicked).offset().top;
+    $("html, body").animate({ scrollTop: topPosition }, 500);
 })
 
 // Submenu Toggle
@@ -67,8 +66,5 @@ $('#contactTextArea').keyup((e) => {
             $('#charsLeft').html(`your available character finished`)
         }
     }, 50)
-
-
-
-
 })
+

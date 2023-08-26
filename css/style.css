@@ -1,3 +1,6 @@
+:root{
+    scroll-behavior: auto !important;
+}
 /* Start of Navbar  */
 .navbar {
     position: fixed;
