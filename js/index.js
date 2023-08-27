@@ -55,7 +55,7 @@ $('#collapsing div h3').click((e) => {
 
 // chars left
 
-$('#contactTextArea').keyup((e) => {
+$('#contactTextArea').keydown((e) => {
     setTimeout(() => {
         // console.log($(e.target).val().length);
         var numberOfChars = $(e.target).val().length;
